@@ -1,0 +1,85 @@
+$font-stack: Arial, sans-serif;
+$background1:rgb(226, 223, 223);
+$background2: rgb(214, 209, 209);
+body{
+    font:$font-stack;
+    background-color: $background1;
+    padding: 0;
+    margin: 0;
+}
+@mixin P_style {
+    color: #272626;
+    font-size: 16px;
+}
+/* Sections */
+section {
+    padding: 20px;
+    h2{
+        font-size: 25px;
+        font-weight: bold
+    }
+    p{
+        @include P_style();
+    }
+}
+// Header
+#header{
+    text-align: center;
+    // margin-left: 50%;
+    
+    img{
+            width: 250px;
+            height: 200px;
+        }
+}
+// Navigation Bar
+#nav{
+    img{       
+        width: 60px;
+        height:px;
+    }
+    ul{
+        
+            text-align: center;
+    }
+}
+
+// Home
+#home{
+    img{
+        display: block;
+        max-width: 100%; 
+        height: 100%;
+    }
+    .caption{
+        line-height: 0.5%;
+        padding-top: 5%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        color: rgb(5, 5, 5);
+    }
+    
+}
+//about us
+#team img{
+    display: block;
+    width: 100%;
+}
+//contact us
+#contact{
+    background-color: $background2;
+    #form label{
+        font-size: 16px;
+        font-weight: bold;
+        display: block;
+    }
+    #form input{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 2px solid #ccc;
+        width: 100%;
+        padding: 10px;
+        
+    }
+}
