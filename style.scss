@@ -1,6 +1,7 @@
 $font-stack: Arial, sans-serif;
 $background1:rgb(226, 223, 223);
 $background2: rgb(214, 209, 209);
+$card-color: rgb(202, 200, 200);
 body{
     font:$font-stack;
     background-color: $background1;
@@ -10,13 +11,15 @@ body{
 @mixin P_style {
     color: #272626;
     font-size: 16px;
+    text-align: center;
 }
 /* Sections */
 section {
-    padding: 20px;
+    padding: 25px;
     h2{
         font-size: 25px;
-        font-weight: bold
+        font-weight: bold;
+        text-align: center
     }
     p{
         @include P_style();
@@ -69,17 +72,31 @@ section {
 //contact us
 #contact{
     background-color: $background2;
-    #form label{
+    text-align: center;
+    margin: 20px;
+    #form{
+        padding: 20px 35px;
+        background-color: $card-color;
+        max-width: 500px;
+    }
+    label{
         font-size: 16px;
         font-weight: bold;
         display: block;
     }
-    #form input{
+    input{
         margin-top: 10px;
         margin-bottom: 10px;
         border: 2px solid #ccc;
         width: 100%;
         padding: 10px;
         
+    }
+    textarea{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 2px solid #ccc;
+        width: 100%;
+        padding: 10px;
     }
 }

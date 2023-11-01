@@ -54,6 +54,7 @@
             <div class="container-fluid" id="home">
                 <h2>Welcome To Café De Peshawar Logo</h2>
                 <p>Enjoy the finest cuisine and coffee in town! We take pride in serving you the best.</p>
+                <br>
                 <!--Image Grid-->
                 <div class="container-fluid">
                     <div class="row">
@@ -105,7 +106,7 @@
         <!--Team-->
         <section>
             <div class="container-fluid" id="team">
-                <h2>Meet Our Team</h2>
+                <h2>Meet Our Team</h2><br>
                 <!--Image Grid-->
                 <div class="container-fluid">
                     <div class="row">
@@ -146,26 +147,24 @@
 
         <!--Contact Us-->
         <section id="contact">
-            <div class="container-fluid">
+            <div class="container">
                 <h2>Contact Us</h2>
                 <p>Have questions or feedback? Contact us!</p>
-                <div id="form">
-                    <form action="#" method="POST" style="max-width: 400px; width: 100%;">
-                        <label for="name" style="font-size: 16px; font-weight: bold; display: block;">Name:</label>
-                        <input type="text" id="name" name="name" required style="font-size: 16px; padding: 10px; width: 100%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;">
-        
-                        <label for="email" style="font-size: 16px; font-weight: bold; display: block;">Email:</label>
-                        <input type="email" id="email" name="email" required style="font-size: 16px; padding: 10px; width: 100%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;">
-        
-                        <label for="message" style="font-size: 16px; font-weight: bold; display: block;">Message:</label>
-                        <textarea id="message" name="message" rows="4" required style="font-size: 16px; padding: 10px; width: 100%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
-            
-                        <button type="submit" style="font-size: 16px; background-color: #008CBA; color: #fff; padding: 10px 20px; border: none; cursor: pointer; width: 100%;">Submit</button>
-                        <label for="name">Name</label>
-                        <input type="text" id="name">
-                    </form>
-                </div>
+                <div class="container-md" id="form">
+                    <div class="mx-auto" style="max-width: 400px;">
+                        <form action="#" method="POST">                        
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Full Name" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn-primary btn-md">Submit</button>  
+                        </form>
+                    </div>
+                </div>      
             </div>
         </section>
+
     </body>
 </html>
