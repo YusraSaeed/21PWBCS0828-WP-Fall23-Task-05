@@ -1,0 +1,21 @@
+#footer {
+    background-color: $background2;
+
+    #logo {
+        width: 10%;
+        height: 10%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-section {
+        text-align: center;
+        padding: 20px;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

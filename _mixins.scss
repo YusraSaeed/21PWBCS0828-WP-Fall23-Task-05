@@ -1,0 +1,14 @@
+@mixin P_style {
+    color: #272626;
+    font-size: 16px;
+    text-align: center;
+}
+
+@mixin caption_style {
+    line-height: 0.5%;
+    padding-top: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(5, 5, 5);
+}
