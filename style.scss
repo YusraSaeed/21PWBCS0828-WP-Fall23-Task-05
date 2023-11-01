@@ -1,7 +1,8 @@
 $font-stack: Arial, sans-serif;
 $background1:rgb(226, 223, 223);
-$background2: rgb(214, 209, 209);
-$card-color: rgb(202, 200, 200);
+// $background2: rgb(235, 231, 231);
+$background2:#eeecec;
+$card-color: rgb(247, 243, 243);
 body{
     font:$font-stack;
     background-color: $background1;
@@ -13,18 +14,33 @@ body{
     font-size: 16px;
     text-align: center;
 }
+@mixin caption_style{
+    line-height: 0.5%;
+        padding-top: 5%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        color: rgb(5, 5, 5);
+}
 /* Sections */
 section {
     padding: 25px;
     h2{
         font-size: 25px;
         font-weight: bold;
-        text-align: center
+        text-align: center;
+    }
+    h3{
+        font-size: 20px; 
+        font-weight: bold;
+        text-align: center;
+        padding-top: 5px;
     }
     p{
         @include P_style();
     }
 }
+
 // Header
 #header{
     text-align: center;
@@ -64,14 +80,28 @@ section {
     }
     
 }
+// Menu
+#menu{
+    background-color: $background2;
+    #card{
+        background-color: $card-color;
+        // margin-top: 20px;
+    }
+    img{
+        display: block;
+        width: 100%;
+        margin: 5px;
+    }
+}
 //about us
 #team img{
     display: block;
     width: 100%;
+    margin: 5px;
 }
 //contact us
 #contact{
-    background-color: $background2;
+    // background-color: $background2;
     text-align: center;
     margin: 20px;
     #form{
@@ -100,3 +130,26 @@ section {
         padding: 10px;
     }
 }
+
+// Footer
+#footer{
+    background-color: $background2;
+    #logo{
+        width: 10%;
+        height: 10%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-section{
+        // flex: 1;
+        text-align: center;
+        padding: 20px;
+        img{
+            width: 30px;
+            height:30px;  
+        }
+    }
+    
+}
+

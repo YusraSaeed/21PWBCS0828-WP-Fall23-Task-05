@@ -14,6 +14,12 @@ section h2 {
   font-weight: bold;
   text-align: center;
 }
+section h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5px;
+}
 section p {
   color: #272626;
   font-size: 16px;
@@ -50,19 +56,31 @@ section p {
   color: rgb(5, 5, 5);
 }
 
+#menu {
+  background-color: #eeecec;
+}
+#menu #card {
+  background-color: rgb(247, 243, 243);
+}
+#menu img {
+  display: block;
+  width: 100%;
+  margin: 5px;
+}
+
 #team img {
   display: block;
   width: 100%;
+  margin: 5px;
 }
 
 #contact {
-  background-color: rgb(214, 209, 209);
   text-align: center;
   margin: 20px;
 }
 #contact #form {
   padding: 20px 35px;
-  background-color: rgb(202, 200, 200);
+  background-color: rgb(247, 243, 243);
   max-width: 500px;
 }
 #contact label {
@@ -83,4 +101,23 @@ section p {
   border: 2px solid #ccc;
   width: 100%;
   padding: 10px;
+}
+
+#footer {
+  background-color: #eeecec;
+}
+#footer #logo {
+  width: 10%;
+  height: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#footer .footer-section {
+  text-align: center;
+  padding: 20px;
+}
+#footer .footer-section img {
+  width: 30px;
+  height: 30px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Fashion Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .navbar-text{
+      padding-right: 35%;
+      text-align: center;
+      font-weight: bold;
+      font-size: 150%;
+    }
+    #container2 {
+      background-color: rgb(241, 192, 202);
+      width: auto;
+      height: 69vh; 
+      flex: 1;
+      
+    }
+    
+    #container2 h2 {
+      position: absolute;
+      top: 30%;
+      left: 15%;
+      color: rgb(250, 158, 173);
+      /*transform: translateY(-50%);*/
+    }
+    #container2 h1{
+      position: absolute;
+      
+      font-size: 500%;
+      top: 35%;
+      left: 15%;
+      color: black;
+      /*transform: translateY(-50%);*/
+    }
+    
+    button{
+      position: absolute;
+      top: 50%;
+      left: 15%;
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+  }
+  .image{
+    display: block;
+    width: 100%;
+  }
+  .caption{
+    line-height: 0.5%;
+    padding-top: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(5, 5, 5);
+  }
+  .catergories{
+    padding-top: 5%;
+    font-weight: bolder;
+    text-align: center;
+    font-style: italic;
+  }
+  /*#container3 h1{
+    
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+  }*/
+  
+  #container4 {
+    margin-top: 9%;
+    padding-top: 2%;
+    min-width: 200px;
+    
+  }
+  h1{
+    
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+  }
+  .rating .fa {
+    color: #ff523b;
+    align-items: center;
+  }
+  #container5 {
+    margin-top: 9%;
+    padding-top: 2%;
+    min-width: 200px;
+    
+  }
+  #form{
+    text-align: center;
+    
+    
+  }
+  .button-two{
+    background-color: #f9004d;
+    color: white;
+    padding-left: 50%;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.footer {
+  background-color: rgb(253, 244, 246);
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+   color: black;
+}
+
+.footer-bottom {
+  color: black;
+    text-align: center;
+    background-color: rgb(253, 244, 246);
+    padding: 10px 0;
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm p-3">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="logo.png" alt="image" style="width: 70px; height: 70px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#container2"><b>Home</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#container4"><b>Products</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#container6"><b>About Us</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#container5"><b>Contact</b></a>
+            </li>
+        </ul>
+    </div>
+    <span class="navbar-text">The Fashion Gallery</span>
+    <div class="navbar-brand" >
+        <a href=""><img src="search.png" alt="user" width="30px" height="30px" ></a>
+        <a href="#"><img src="user.png" alt="user" width="30px" height="30px" ></a>
+        <a href="#"><img src="cart.png" alt="user" width="30px" height="30px"></a>
+    </div>
+  </div>
+</nav>
+
+<!--Top text-->
+<div class="container-sm" id="container2">
+  <div class = "content">
+    <h2>Upto 20% discount on</h2>
+    <h1><b><i>Girl's Fashion</i></b></h1>
+    <div class="bg">
+      <img src="bg.png" style="float: right;" height="540" width="400"> 
+    </div>
+    <button>Shop Now</button>
+  </div>
+</div>
+
+<!--Categories-->
+  <div class="container-sm" id="container3">
+      <div class="catergories">
+          <h1>Categories</h1>
+      </div>
+      <br>
+      <div class="row">
+          <div class="col-lg-4 col-sm-6">
+              <div clas="thumnail">
+                  <div class="image-container">
+                      <a href="#"><img src="cat1.jpg" class="image" style="width: 100%;"></a>
+                      <div class="overlay">
+                          <p class="caption">Dresses</p>
+                      </div>  
+                  </div>
+              </div>    
+          </div>
+
+          <div class="col-lg-4 col-sm-6">
+              <div clas="thumnail">
+                  <div class="image-container">
+                      <a href="#"><img src="cat2.jpg" class="image" style="width: 100%;"></a> 
+                      <div class="overlay">
+                          <p class="caption">Suits</p>
+                      </div>  
+                  </div>
+              </div>    
+          </div>
+
+          <div class="col-lg-4 col-sm-6">
+              <div clas="thumnail">
+                  <div class="image-container">
+                      <a href="#"><img src="cat3.jpg" class="image" style="width: 100%;"></a>
+                      <div class="overlay">
+                          <p class="caption">Casual</p>
+                      </div>  
+                  </div>
+              </div>    
+          </div>
+      </div>
+      <!--<div>
+        <button class ="btn" type="button">Explore</button>
+    </div>-->
+
+  </div>
+  
+  
+
+<!--Products-->
+<div class="container-sm" id="container4">
+  <div class="products">
+      <h1>Top Products</h1>
+  </div>
+  <br>
+  <div class="row">
+      <div class="col-lg-4 col-sm-6">
+          <div clas="thumnail">
+              <div class="image-container">
+                  <img src="pro1.jpg" class="image" style="width: 100%;">  
+                  <div class="overlay">
+                      <p class="caption">Pink Ruffle Dress</p>
+                      <p class="caption">$90.00</p>
+                      <div class="rating">
+                        <center><i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i></center>
+                    </div>
+                  </div>
+                  
+              </div>
+          </div>    
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+          <div clas="thumnail">
+              <div class="image-container">
+                  <img src="pro2.jpg" class="image" style="width: 100%;">  
+                  <div class="overlay">
+                      <p class="caption">Grey Sweater</p>
+                      <p class="caption">$50.00</p>
+                      <div class="rating">
+                        <center><i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i></center>
+                    </div>
+                  </div>  
+              </div>
+          </div>    
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+          <div clas="thumnail">
+              <div class="image-container">
+                  <img src="pro3.jpg" class="image" style="width: 100%;">  
+                  <div class="overlay">
+                      <p class="caption">Mustard Suit</p>
+                      <p class="caption">$70.00</p>
+                      <div class="rating">
+                        <center><i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i></center>
+                    </div>
+                  </div>  
+              </div>
+          </div>    
+      </div>
+
+
+      <div class="col-lg-4 col-sm-6">
+        <div clas="thumnail">
+            <div class="image-container">
+                <img src="pro4.jpg" class="image" style="width: 100%;">  
+                <div class="overlay">
+                    <p class="caption">Floral Summer Dress</p>
+                    <p class="caption">$65.00</p>
+                    <div class="rating">
+                      <center><i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-o"></i></center>
+                  </div>
+                </div>  
+            </div>
+        </div>    
+    </div>
+
+    <div class="col-lg-4 col-sm-6">
+        <div clas="thumnail">
+            <div class="image-container">
+                <img src="pro5.jpg" class="image" style="width: 100%;">  
+                <div class="overlay">
+                    <p class="caption">Blue Denim Jacket</p>
+                    <p class="caption">$90.00</p>
+                    <div class="rating">
+                      <center><i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-o"></i></center>
+                  </div>
+                </div>  
+            </div>
+        </div>    
+    </div>
+
+    <div class="col-lg-4 col-sm-6">
+        <div clas="thumnail">
+            <div class="image-container">
+                <img src="pro6.jpg" class="image" style="width: 100%;">  
+                <div class="overlay">
+                    <p class="caption">Blue Jumper</p>
+                    <p class="caption">$75.00</p>
+                    <div class="rating">
+                      <center><i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-o"></i></center>
+                  </div>
+                </div>  
+            </div>
+        </div>    
+    </div>
+  </div>
+</div>
+<!--Contact-->
+<div class="container-sm" id="container5">
+      <h1>Contact Us</h2>
+
+      <form class = "form" action = "/submit" method = "post" id="form">
+        <label for = "name">Full Name:</label><br>
+        <input type = "text" id = "name" name = "name" required><br><br>
+        
+        <label for = "email">Email:</label><br>
+        <input type="email" id = "email" name = "email" required><br><br>
+
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+    
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="10" cols="50" required></textarea><br><br>
+        <a class="button-two" href="#">Submit</a>
+
+    </form>  
+    <br>
+</div>
+
+<!--Footer-->
+<footer class="footer" id="container6">
+  <div class="footer-content">
+      <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: thefashiongallery@gmail.com</p>
+          <p>Phone: +1 (123) 456-7890</p>
+      </div>
+      <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </div>
+      <div class="footer-section">
+          <h3>Follow Us</h3>
+          <p>Stay connected on social media</p>
+          <a href="#"><img src="facebook.png" alt="Facebook" width="30" height="30;"></a>
+          <a href="#"><img src="twitter.png" alt="Twitter" width="40" height="40;"></a>
+          <a href="#"><img src="instagram.png" alt="Instagram" width="30" height="30;"></a>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2023 The Fashion Gallery. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
+
+
